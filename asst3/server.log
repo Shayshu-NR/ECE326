@@ -1,0 +1,536 @@
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-01-insert.py --------
+
+[
+1. User:
+    1. firstName : string
+    2. lastName : string
+    3. height : float
+    4. age : integer
+, 
+2. Account:
+    1. user : foreign(1)
+    2. type : string
+    3. balance : float
+, 
+3. Student:
+    1. user : foreign(1)
+    2. tcard : integer
+, 
+4. Assignment:
+    1. student : foreign(3)
+    2. grade : string
+, 
+5. Debt:
+    1. owing : foreign(2)
+    2. collector : foreign(1)
+    3. amount : float
+]
+Listening: TcpListener { addr: 127.0.0.1:1459, fd: 3 }
+Connected to 127.0.0.1:51452
+Available threads 4
+Available threads 3
+Disconnected.
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-02-update.py --------
+
+[
+1. User:
+    1. firstName : string
+    2. lastName : string
+    3. height : float
+    4. age : integer
+, 
+2. Account:
+    1. user : foreign(1)
+    2. type : string
+    3. balance : float
+, 
+3. Student:
+    1. user : foreign(1)
+    2. tcard : integer
+, 
+4. Assignment:
+    1. student : foreign(3)
+    2. grade : string
+, 
+5. Debt:
+    1. owing : foreign(2)
+    2. collector : foreign(1)
+    3. amount : float
+]
+Listening: TcpListener { addr: 127.0.0.1:8573, fd: 3 }
+Connected to 127.0.0.1:56918
+Available threads 4
+Available threads 3
+Disconnected.
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-03-drop.py --------
+
+[
+1. User:
+    1. firstName : string
+    2. lastName : string
+    3. height : float
+    4. age : integer
+, 
+2. Account:
+    1. user : foreign(1)
+    2. type : string
+    3. balance : float
+, 
+3. Student:
+    1. user : foreign(1)
+    2. tcard : integer
+, 
+4. Assignment:
+    1. student : foreign(3)
+    2. grade : string
+, 
+5. Debt:
+    1. owing : foreign(2)
+    2. collector : foreign(1)
+    3. amount : float
+]
+Listening: TcpListener { addr: 127.0.0.1:1829, fd: 3 }
+Connected to 127.0.0.1:37370
+Available threads 4
+Available threads 3
+Disconnected.
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-04-scan.py --------
+
+[
+1. User:
+    1. firstName : string
+    2. lastName : string
+    3. height : float
+    4. age : integer
+, 
+2. Account:
+    1. user : foreign(1)
+    2. type : string
+    3. balance : float
+, 
+3. Student:
+    1. user : foreign(1)
+    2. tcard : integer
+, 
+4. Assignment:
+    1. student : foreign(3)
+    2. grade : string
+, 
+5. Debt:
+    1. owing : foreign(2)
+    2. collector : foreign(1)
+    3. amount : float
+]
+Listening: TcpListener { addr: 127.0.0.1:1962, fd: 3 }
+Connected to 127.0.0.1:32874
+Available threads 4
+Available threads 3
+Disconnected.
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-05-stress.py --------
+
+[
+1. User:
+    1. firstName : string
+    2. lastName : string
+    3. height : float
+    4. age : integer
+, 
+2. Account:
+    1. user : foreign(1)
+    2. type : string
+    3. balance : float
+, 
+3. Student:
+    1. user : foreign(1)
+    2. tcard : integer
+, 
+4. Assignment:
+    1. student : foreign(3)
+    2. grade : string
+, 
+5. Debt:
+    1. owing : foreign(2)
+    2. collector : foreign(1)
+    3. amount : float
+]
+Listening: TcpListener { addr: 127.0.0.1:8702, fd: 3 }
+Connected to 127.0.0.1:35066
+Available threads 4
+Available threads 3
+Disconnected.
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-06-parallel.py --------
+
+[
+1. Company:
+    1. name : string
+    2. president : string
+    3. balance : float
+    4. numEmployee : integer
+, 
+2. Order:
+    1. product : string
+    2. customer : string
+    3. cost : float
+    4. quantity : integer
+, 
+3. Employee:
+    1. firstName : string
+    2. lastName : string
+    3. salary : float
+    4. numYears : integer
+, 
+4. Transaction:
+    1. buyer : string
+    2. agent : string
+    3. payment : float
+    4. timestamp : integer
+]
+Listening: TcpListener { addr: 127.0.0.1:7697, fd: 3 }
+Connected to 127.0.0.1:35690
+Available threads 4
+Connected to 127.0.0.1:35692
+Available threads 3
+Connected to 127.0.0.1:35694
+Available threads 2
+Connected to 127.0.0.1:35696
+Available threads 1
+Available threads 0
+Available threads 1
+Available threads 2
+Disconnected.
+Disconnected.
+Available threads 3
+Disconnected.
+Disconnected.
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-07-speedup.py --------
+
+[
+1. Company:
+    1. name : string
+    2. president : string
+    3. balance : float
+    4. numEmployee : integer
+, 
+2. Order:
+    1. product : string
+    2. customer : string
+    3. cost : float
+    4. quantity : integer
+, 
+3. Employee:
+    1. firstName : string
+    2. lastName : string
+    3. salary : float
+    4. numYears : integer
+, 
+4. Transaction:
+    1. buyer : string
+    2. agent : string
+    3. payment : float
+    4. timestamp : integer
+]
+Listening: TcpListener { addr: 127.0.0.1:9027, fd: 3 }
+Connected to 127.0.0.1:42234
+Available threads 4
+Available threads 3
+Disconnected.
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-07-speedup.py --------
+
+[
+1. Company:
+    1. name : string
+    2. president : string
+    3. balance : float
+    4. numEmployee : integer
+, 
+2. Order:
+    1. product : string
+    2. customer : string
+    3. cost : float
+    4. quantity : integer
+, 
+3. Employee:
+    1. firstName : string
+    2. lastName : string
+    3. salary : float
+    4. numYears : integer
+, 
+4. Transaction:
+    1. buyer : string
+    2. agent : string
+    3. payment : float
+    4. timestamp : integer
+]
+Listening: TcpListener { addr: 127.0.0.1:4001, fd: 3 }
+Connected to 127.0.0.1:41502
+Available threads 4
+Connected to 127.0.0.1:41504
+Available threads 3
+Connected to 127.0.0.1:41506
+Available threads 2
+Connected to 127.0.0.1:41508
+Available threads 1
+Available threads 0
+Available threads 1
+Available threads 2
+Available threads 3
+Disconnected.
+Disconnected.
+Disconnected.
+Disconnected.
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-07-speedup.py --------
+
+[
+1. Company:
+    1. name : string
+    2. president : string
+    3. balance : float
+    4. numEmployee : integer
+, 
+2. Order:
+    1. product : string
+    2. customer : string
+    3. cost : float
+    4. quantity : integer
+, 
+3. Employee:
+    1. firstName : string
+    2. lastName : string
+    3. salary : float
+    4. numYears : integer
+, 
+4. Transaction:
+    1. buyer : string
+    2. agent : string
+    3. payment : float
+    4. timestamp : integer
+]
+Listening: TcpListener { addr: 127.0.0.1:3010, fd: 3 }
+Connected to 127.0.0.1:37796
+Available threads 4
+Available threads 3
+Disconnected.
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-07-speedup.py --------
+
+[
+1. Company:
+    1. name : string
+    2. president : string
+    3. balance : float
+    4. numEmployee : integer
+, 
+2. Order:
+    1. product : string
+    2. customer : string
+    3. cost : float
+    4. quantity : integer
+, 
+3. Employee:
+    1. firstName : string
+    2. lastName : string
+    3. salary : float
+    4. numYears : integer
+, 
+4. Transaction:
+    1. buyer : string
+    2. agent : string
+    3. payment : float
+    4. timestamp : integer
+]
+Listening: TcpListener { addr: 127.0.0.1:8502, fd: 3 }
+Connected to 127.0.0.1:59692
+Available threads 4
+Connected to 127.0.0.1:59694
+Available threads 3
+Connected to 127.0.0.1:59696
+Available threads 2
+Connected to 127.0.0.1:59698
+Available threads 1
+Available threads 0
+Available threads 1
+Available threads 2
+Available threads 3
+Disconnected.
+Disconnected.
+Disconnected.
+Disconnected.
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-07-speedup.py --------
+
+[
+1. Company:
+    1. name : string
+    2. president : string
+    3. balance : float
+    4. numEmployee : integer
+, 
+2. Order:
+    1. product : string
+    2. customer : string
+    3. cost : float
+    4. quantity : integer
+, 
+3. Employee:
+    1. firstName : string
+    2. lastName : string
+    3. salary : float
+    4. numYears : integer
+, 
+4. Transaction:
+    1. buyer : string
+    2. agent : string
+    3. payment : float
+    4. timestamp : integer
+]
+Listening: TcpListener { addr: 127.0.0.1:9806, fd: 3 }
+Connected to 127.0.0.1:36646
+Available threads 4
+Available threads 3
+Disconnected.
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-07-speedup.py --------
+
+[
+1. Company:
+    1. name : string
+    2. president : string
+    3. balance : float
+    4. numEmployee : integer
+, 
+2. Order:
+    1. product : string
+    2. customer : string
+    3. cost : float
+    4. quantity : integer
+, 
+3. Employee:
+    1. firstName : string
+    2. lastName : string
+    3. salary : float
+    4. numYears : integer
+, 
+4. Transaction:
+    1. buyer : string
+    2. agent : string
+    3. payment : float
+    4. timestamp : integer
+]
+Listening: TcpListener { addr: 127.0.0.1:9106, fd: 3 }
+Connected to 127.0.0.1:49062
+Available threads 4
+Connected to 127.0.0.1:49064
+Available threads 3
+Connected to 127.0.0.1:49066
+Available threads 2
+Connected to 127.0.0.1:49068
+Available threads 1
+Available threads 0
+Available threads 1
+Available threads 2
+Disconnected.
+Disconnected.
+Available threads 3
+Disconnected.
+Disconnected.
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-08-limit.py --------
+
+[
+1. User:
+    1. firstName : string
+    2. lastName : string
+    3. height : float
+    4. age : integer
+, 
+2. Account:
+    1. user : foreign(1)
+    2. type : string
+    3. balance : float
+, 
+3. Student:
+    1. user : foreign(1)
+    2. tcard : integer
+, 
+4. Assignment:
+    1. student : foreign(3)
+    2. grade : string
+, 
+5. Debt:
+    1. owing : foreign(2)
+    2. collector : foreign(1)
+    3. amount : float
+]
+Listening: TcpListener { addr: 127.0.0.1:9808, fd: 3 }
+Connected to 127.0.0.1:45878
+Available threads 4
+Connected to 127.0.0.1:45880
+Available threads 3
+Connected to 127.0.0.1:45882
+Available threads 2
+Connected to 127.0.0.1:45884
+Available threads 1
+Connected to 127.0.0.1:45886
+Available threads 0
+Connection error: Custom { kind: Other, error: "oh no!Available threads 0
+" }
+Available threads 1
+Disconnected.
+Disconnected.
+Connected to 127.0.0.1:45888
+Available threads 2
+Connected to 127.0.0.1:45890
+Available threads 1
+Connected to 127.0.0.1:45892
+Available threads 0
+Connection error: Custom { kind: Other, error: "oh no!" }
+Connection error: Custom { kind: Other, error: 
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-09-synch.py --------
+
+[
+1. Artist:
+    1. firstName : string
+    2. lastName : string
+    3. age : integer
+, 
+2. Publisher:
+    1. name : string
+, 
+3. Album:
+    1. name : string
+    2. publish : foreign(2)
+    3. artist1 : foreign(1)
+    4. artist2 : foreign(1)
+    5. price : float
+, 
+4. Song:
+    1. name : string
+    2. album : foreign(3)
+    3. likes : integer
+]
+Listening: TcpListener { addr: 127.0.0.1:1499, fd: 3 }
+Connected to 127.0.0.1:39048
+Available threads 4
+Connected to 127.0.0.1:39050
+Available threads 3
+Connected to 127.0.0.1:39052
+Available threads 2
+Connected to 127.0.0.1:39054
+Available threads 1
+Available threads 0
+Disconnected.
+Available threads 1
+Available threads 2
+Available threads 3
+Disconnected.
+Disconnected.
+Disconnected.

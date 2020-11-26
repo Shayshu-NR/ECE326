@@ -1,0 +1,273 @@
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-01-insert.py --------
+
+running test number 1
+PASS: Insert on table 1
+PASS: Insert on table 2
+PASS: Insert on table 1 returned BAD_VALUE
+PASS: Insert on table 1 returned BAD_VALUE
+PASS: Insert on table 1 returned BAD_TABLE
+PASS: Insert on table 1 returned BAD_ROW
+PASS: Insert on table 1 returned BAD_ROW
+PASS: GET on table 1
+PASS: GET on table 1
+PASS: Insert on table 2 returned BAD_FOREIGN
+PASS: Get on table 2 returned NOT_FOUND
+PASS: Get on table 2 returned NOT_FOUND
+PASS: Get on table 69 returned BAD_TABLE
+PASS: Get on table 0 returned BAD_TABLE
+PASS: No duplicate id found during mass insertion
+TOTAL MARKS: 18 of 18
+DONE 18
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-02-update.py --------
+
+running test number 2
+PASS: UPDATE on table 1
+PASS: GET after UPDATE on table 1
+PASS: GET after UPDATE on table 1
+PASS: GET on table 1
+PASS: GET on table 1
+PASS: UPDATE on table 2
+PASS: GET after UPDATE on table 2
+PASS: UPDATE on table 2 returned BAD_FOREIGN
+PASS: UPDATE on table 1 returned BAD_ROW
+PASS: UPDATE on table 1 returned BAD_VALUE
+PASS: UPDATE on table 1 returned TXN_ABORT
+PASS: UPDATE on table 1 with version = 0
+PASS: UPDATE on table 1 returned NOT_FOUND
+PASS: GET after UPDATE x1000 on table 2
+TOTAL MARKS: 17 of 17
+DONE 17
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-03-drop.py --------
+
+running test number 3
+PASS: Drop on table 0 returned BAD_TABLE
+PASS: Drop on User 1
+PASS: Drop on Account 1
+PASS: Account 2 is there
+PASS: Cascade drop on Account 2
+PASS: Drop on Student 2
+PASS: Cascade drop on Assignment 2
+PASS: Assignment 1 is there
+PASS: Cascade drop on Student 1
+PASS: Cascade drop on Assignment 1 
+INFO: dropped User 25
+INFO: cascade dropped 5 accounts
+INFO: cascade dropped 15 debts
+INFO: dropped User 30
+INFO: cascade dropped 87 debts
+TOTAL MARKS: 17 of 17
+DONE 17
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-04-scan.py --------
+
+running test number 4
+PASS: SCAN:OP_NE on User 1
+PASS: SCAN:OP_EQ on User 1
+PASS: SCAN returned BAD_QUERY on bad operator
+PASS: SCAN returned BAD_QUERY on unsupported operator for foreign
+PASS: SCAN:OP_EQ on Table 1
+PASS: SCAN:OP_LT on Table 1
+PASS: SCAN:OP_GE on Table 1
+PASS: SCAN:OP_EQ on Table 1
+PASS: SCAN:OP_NE on Table 1
+PASS: SCAN:OP_GT on Table 1
+PASS: SCAN:OP_LE on Table 1
+PASS: SCAN:OP_GE on Table 1
+PASS: SCAN returned BAD_QUERY on column type mismatch
+PASS: SCAN:OP_NE on Table 3
+PASS: SCAN:OP_EQ on Table 3
+PASS: SCAN:OP_AL on Table 3
+PASS: SCAN returned BAD_QUERY when column id is not 0 for OP_AL
+PASS: SCAN returned BAD_TABLE on table_id 0
+TOTAL MARKS: 18 of 18
+DONE 18
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-05-stress.py --------
+
+running test number 5
+EXPECTING: NOT_FOUND or BAD_FOREIGN
+PASS: UPDATE returned code 9
+EXPECTING: NOT_FOUND
+PASS: UPDATE account after cascade delete returned NOT_FOUND
+People greater than 30 years old: 6 10 3 2 9 12 5 8 11 
+Table 1 Row 8: Pto Ddhjzeooflpxanrqj 2.09575 37 
+Table 1 Row 8: Aagoartcvwzgqwr Hsw 7.58227 71 
+Does Not Exist: Table 1 Row 3
+People greater than 30 years old: 6 10 2 9 12 5 8 11 
+Table 1 Row 13: Udcrbbysa Hjh 2.66398 55 
+Table 1 Row 14: Euzelgpvmvf Isukzegbj 3.30378 78 
+Table 1 Row 15: Vx Vahzdaj 6.68341 42 
+Table 1 Row 16: Lluttquur Sjqnjkj 5.07608 81 
+Table 1 Row 17: Gdpypdqyesb Qwshietgkqnyyqtptu 5.29695 95 
+Table 1 Row 18: Chiq Adfosktgghck 7.85471 40 
+Table 1 Row 19: Aoykcfkndy Kuuvuilxdjqdjolwedd 7.14886 29 
+Table 1 Row 20: Vhuzmz Rtaiqgicqhlmdrgv 2.14466 46 
+Table 1 Row 21: Ofooogwyiph Dmnjjr 3.15019 28 
+Table 1 Row 22: Qwuzo Vdljkemqpcnvirsclvufgci 6.17256 10 
+Table 1 Row 23: Hphikpv Enlmvhjcozbycxdm 7.82311 71 
+Table 1 Row 24: Envzkun Flhprlbn 7.42087 56 
+Table 1 Row 25: Xqeswrpydklsryb Smkhedrfhba 7.09163 45 
+Table 1 Row 26: Juewsmfs Blmxieoqhkfmzbboxsfujud 5.57384 18 
+Table 1 Row 27: Mzmcij Wrxzzmdwbda 4.19759 74 
+Table 1 Row 28: Eezeivucz Fdtyjwrwiwhnvtqjirda 4.37389 94 
+Table 1 Row 29: Dtvnmanhhvcukrc Jqifzhkcbnrpxtacmxrzxe 3.08486 92 
+Table 1 Row 30: Dladrij Umhyrboof 7.13661 12 
+Table 1 Row 31: Kfnusglenukyvap Rkbilejwbewgynnkucfoks 4.86417 91 
+Table 1 Row 32: Pilterurgenllcv Vtscschgehej 7.44131 93 
+Table 1 Row 33: Omtlhmnzqwh Dn 7.79254 67 
+Table 1 Row 34: Egaajnhbsgxz Tjoktvbqsfacfw 6.31948 93 
+Table 1 Row 35: Xhuveqetprn Rwarxpraqln 7.88765 82 
+Table 1 Row 36: Ynmrzczrwr Qpfhtqvcroghzzrc 2.63087 92 
+Table 1 Row 37: Wqbytnnndgij Ui 2.33009 51 
+Table 1 Row 38: Fgbvbkvxfvavulz Uwabnuyqreeyfo 7.58033 43 
+Table 1 Row 39: Kpkp Qqfsomukptjufcxkois 2.63925 83 
+Table 1 Row 40: Zganhtqvclrgx Cuatbssnlbnmfmlbhmhhzq 7.70773 60 
+Table 1 Row 41: Urvhrvmi Umekeob 2.12068 28 
+Table 1 Row 42: Vcexrnpplngb Dnpwsiwoxmtvunxrnpm 2.68832 67 
+Table 1 Row 43: Pocldzcqo Hicrqdo 3.16538 98 
+Table 1 Row 44: Bsbadpwvr Shuncyanmtbsevncibi 4.42198 89 
+Table 1 Row 45: Xaxkvjunnkxbwxq Ytdty 3.59416 38 
+Table 1 Row 46: Pgqqfnzo Twkqdghvyobbsk 4.38826 61 
+Table 1 Row 47: Duvrxxliaiqji Dfjftpo 5.28862 82 
+Table 1 Row 48: Fdhpvtamwhvdcnr Odbthv 4.02848 46 
+Table 1 Row 49: Leigw Kvwwkcdbugajqdoqehxj 3.81485 49 
+Table 1 Row 50: Gfqsfcplwunhkko Uzrierxsiqxqpiyvno 4.48929 94 
+Table 1 Row 51: Jpjatdzjknz Bgbsfoeqtnsn 4.23579 45 
+Table 1 Row 52: Iyowg Nygmrhslq 6.09589 88 
+Table 1 Row 53: Sorzcjgwwyfpx Vpxhgudjoawphhgiaz 5.31396 49 
+Table 1 Row 54: Nbefjlrhnmkmm Ankgwesnydhkqcy 2.59385 53 
+Table 1 Row 55: Mwkkbrwtwug Jwgeyarhktbhfyfghj 7.72935 12 
+Table 1 Row 56: Griobb Kipqqwbusjnatxe 6.7007 27 
+Table 1 Row 57: Bhbjutcwcbos Mmusnpqfipswyv 2.90706 95 
+Table 1 Row 58: Cryj Hbxlwvstj 6.84776 93 
+Table 1 Row 59: Lq Gzou 4.60479 92 
+Table 1 Row 60: Lc Imlnrwpcybdgydeosro 7.72262 92 
+Table 1 Row 61: Bmzqqzut Szlgtevnanp 3.32971 39 
+Table 1 Row 62: Gmawdxskz Yiwvnxwhyn 6.64995 52 
+People greater than 30 years old: 6 10 2 9 12 5 8 11 
+Table 2 Row 2: pk(8) Savings 481.449 
+Table 2 Row 22: pk(63) Savings 810.901 
+Does Not Exist: Table 2 Row 22
+Does Not Exist: Table 2 Row 24
+Does Not Exist: Table 2 Row 26
+Does Not Exist: Table 2 Row 28
+Does Not Exist: Table 2 Row 30
+Does Not Exist: Table 2 Row 32
+Does Not Exist: Table 2 Row 34
+Does Not Exist: Table 2 Row 36
+Does Not Exist: Table 2 Row 38
+Does Not Exist: Table 2 Row 40
+Balances less than 100.0: 17 15 39 
+Does Not Exist: Table 2 Row 2
+Does Not Exist: Table 2 Row 3
+Does Not Exist: Table 2 Row 4
+Does Not Exist: Table 2 Row 5
+Does Not Exist: Table 2 Row 6
+Does Not Exist: Table 2 Row 7
+Does Not Exist: Table 2 Row 8
+Does Not Exist: Table 2 Row 9
+Does Not Exist: Table 2 Row 10
+Does Not Exist: Table 2 Row 11
+Does Not Exist: Table 2 Row 12
+Does Not Exist: Table 2 Row 13
+Does Not Exist: Table 2 Row 14
+Does Not Exist: Table 2 Row 15
+Does Not Exist: Table 2 Row 16
+Does Not Exist: Table 2 Row 17
+Does Not Exist: Table 2 Row 18
+Does Not Exist: Table 2 Row 19
+Does Not Exist: Table 2 Row 20
+Does Not Exist: Table 2 Row 21
+Balances less than 100.0: 39 
+TOTAL MARKS: 10 of 10
+DONE 10
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-06-parallel.py --------
+
+Received 176/500 bribes from politician 0
+Received 146/500 bribes from politician 1
+Received 124/500 bribes from politician 2
+Received 110/500 bribes from politician 3
+Jemin Manufacturing LTD:
+President: Andrew Choi
+Balance: 2667818.000000
+Number of Employees: 42
+DONE 5
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-07-speedup.py --------
+
+running test number 7
+DEBUG: inserting 50000 rows on client 1 took 0.931644 seconds
+DEBUG: getting 50000 rows on client 1 took 0.737652 seconds
+DEBUG: dropping 50000 rows on client 1 took 0.666675 seconds
+INFO: took 2.336789 seconds to complete serial task
+DONE 1
+
+running test number 7b
+DEBUG: inserting 12500 rows on client 3 took 0.910876 seconds
+DEBUG: inserting 12500 rows on client 4 took 0.927558 seconds
+DEBUG: inserting 12500 rows on client 1 took 0.954330 seconds
+DEBUG: inserting 12500 rows on client 2 took 0.966119 seconds
+DEBUG: getting 12500 rows on client 3 took 1.129902 seconds
+DEBUG: getting 12500 rows on client 4 took 1.115536 seconds
+DEBUG: getting 12500 rows on client 2 took 1.094542 seconds
+DEBUG: getting 12500 rows on client 1 took 1.127072 seconds
+DEBUG: dropping 12500 rows on client 4 took 0.802848 seconds
+DEBUG: dropping 12500 rows on client 2 took 0.823127 seconds
+DEBUG: dropping 12500 rows on client 3 took 0.875822 seconds
+DEBUG: dropping 12500 rows on client 1 took 0.838156 seconds
+INFO: took 2.919956 seconds to complete parallel tasks
+DONE 1
+
+running test number 7
+DEBUG: inserting 50000 rows on client 1 took 0.945860 seconds
+DEBUG: getting 50000 rows on client 1 took 0.773372 seconds
+DEBUG: dropping 50000 rows on client 1 took 0.685547 seconds
+INFO: took 2.405675 seconds to complete serial task
+DONE 1
+
+running test number 7b
+DEBUG: inserting 12500 rows on client 3 took 0.876289 seconds
+DEBUG: inserting 12500 rows on client 2 took 0.878093 seconds
+DEBUG: inserting 12500 rows on client 1 took 0.954606 seconds
+DEBUG: inserting 12500 rows on client 4 took 0.990559 seconds
+DEBUG: getting 12500 rows on client 2 took 1.049138 seconds
+DEBUG: getting 12500 rows on client 3 took 1.161064 seconds
+DEBUG: getting 12500 rows on client 1 took 1.103776 seconds
+DEBUG: getting 12500 rows on client 4 took 1.093103 seconds
+DEBUG: dropping 12500 rows on client 1 took 0.836432 seconds
+DEBUG: dropping 12500 rows on client 2 took 0.997181 seconds
+DEBUG: dropping 12500 rows on client 4 took 0.876533 seconds
+DEBUG: dropping 12500 rows on client 3 took 0.950838 seconds
+INFO: took 2.988701 seconds to complete parallel tasks
+DONE 1
+
+running test number 7
+DEBUG: inserting 50000 rows on client 1 took 0.939768 seconds
+DEBUG: getting 50000 rows on client 1 took 0.752654 seconds
+DEBUG: dropping 50000 rows on client 1 took 0.670794 seconds
+INFO: took 2.364037 seconds to complete serial task
+DONE 1
+
+running test number 7b
+DEBUG: inserting 12500 rows on client 2 took 0.823866 seconds
+DEBUG: inserting 12500 rows on client 4 took 0.912566 seconds
+DEBUG: inserting 12500 rows on client 1 took 0.932467 seconds
+DEBUG: inserting 12500 rows on client 3 took 0.953076 seconds
+DEBUG: getting 12500 rows on client 2 took 1.040154 seconds
+DEBUG: getting 12500 rows on client 4 took 1.025341 seconds
+DEBUG: getting 12500 rows on client 1 took 1.031483 seconds
+DEBUG: getting 12500 rows on client 3 took 1.033428 seconds
+DEBUG: dropping 12500 rows on client 4 took 0.521781 seconds
+DEBUG: dropping 12500 rows on client 1 took 0.615806 seconds
+DEBUG: dropping 12500 rows on client 2 took 0.716184 seconds
+DEBUG: dropping 12500 rows on client 3 took 0.664758 seconds
+INFO: took 2.651728 seconds to complete parallel tasks
+DONE 1
+
+-------- /nfs/ug/cad/cad2/ece326f/tester/scripts/lab3-09-synch.py --------
+
+DONE 5
