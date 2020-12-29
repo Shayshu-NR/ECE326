@@ -4,4 +4,4 @@ Python
 Rust
 C++
 
-Don't copy this code and get everyone an academic offense 
+Don't copy this code pls
